@@ -6,6 +6,7 @@ document.getElementById('donate-noakhali').addEventListener('click', function(ev
 
     if(isNaN(donationAmountNoakhali)){
         alert('Enter Valid Amount');
+        return;
     };
 
     if(donationAmountNoakhali<=0){
@@ -35,9 +36,12 @@ document.getElementById('donate-noakhali').addEventListener('click', function(ev
     <p>Date: ${Date()}</p>
     `
 
+    document.getElementById('my_modal_1').showModal();
+
     document.getElementById('history-section').appendChild(div);
 
     document.getElementById('donation-amount-noakhali').value = '';
+
 
 });
 
@@ -51,6 +55,7 @@ document.getElementById('donate-feni').addEventListener('click', function(event)
 
     if(isNaN(donationAmountFeni)){
         alert('Enter Valid Amount');
+        return;
     };
 
     if(donationAmountFeni<=0){
@@ -79,6 +84,7 @@ document.getElementById('donate-feni').addEventListener('click', function(event)
     <h1>${donationAmountFeni} Taka is Donated for Donate for Flood at Feni, Bangladesh.</h1>
     <p>Date: ${Date()}</p>
     `
+    document.getElementById('my_modal_1').showModal();
 
     document.getElementById('history-section').appendChild(div);
 
@@ -96,6 +102,7 @@ document.getElementById('donate-aid').addEventListener('click', function(event){
 
     if(isNaN(donationAmountAid)){
         alert('Enter Valid Amount');
+        return;
     };
 
     if(donationAmountAid<=0){
@@ -124,6 +131,8 @@ document.getElementById('donate-aid').addEventListener('click', function(event){
     <h1>${donationAmountAid} Taka is Donated for Donate for Aid, Bangladesh.</h1>
     <p>Date: ${Date()}</p>
     `
+
+    document.getElementById('my_modal_1').showModal();
 
     document.getElementById('history-section').appendChild(div);
 

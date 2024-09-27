@@ -40,14 +40,3 @@ function changeButtonColor(id) {
     clickedButton.style.backgroundColor = '#B4F461';
     clickedButton.style.border = 'none'; // Remove border for the active button
 }
-
-function showSuccessModal() {
-    document.getElementById('successModal').classList.remove('hidden'); // Show modal
-}
-
-// Function to close the modal
-function closeModal() {
-    document.getElementById('successModal').classList.add('hidden'); // Hide modal
-}
-
-document.getElementById('closeModal').addEventListener('click', closeModal);
