@@ -37,6 +37,8 @@ document.getElementById('donate-noakhali').addEventListener('click', function(ev
 
     document.getElementById('history-section').appendChild(div);
 
+    document.getElementById('donation-amount-noakhali').value = '';
+
 });
 
 
@@ -80,6 +82,9 @@ document.getElementById('donate-feni').addEventListener('click', function(event)
 
     document.getElementById('history-section').appendChild(div);
 
+    document.getElementById('donation-amount-feni').value = '';
+
+
 });
 
 
@@ -122,4 +127,5 @@ document.getElementById('donate-aid').addEventListener('click', function(event){
 
     document.getElementById('history-section').appendChild(div);
 
+    document.getElementById('donation-amount-aid').value = '';
 });

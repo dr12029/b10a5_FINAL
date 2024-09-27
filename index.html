@@ -29,8 +29,8 @@
         </div>
         <div class="navbar-donation-history pt-[5rem] pb-8">
             <div class="flex flex-col gap-8 justify-center items-center md:flex-row md:gap-4">
-                <button class="btn bg-[#B4F461] text-[1.25rem] px-8 py-4 rounded-lg">Donation</button>
-                <button class="btn bg-white text-[1.25rem] px-8 py-4 border-solid border-[#1111114d] rounded-lg">History</button>
+                <button id="show-donation-section" class="btn bg-[#B4F461] text-[1.25rem] px-8 py-4 rounded-lg">Donation</button>
+                <button id="show-history-section" class="btn bg-white text-[1.25rem] px-8 py-4 border-solid border-[#1111114d] rounded-lg">History</button>
             </div>
         </div>
 
@@ -100,7 +100,18 @@
                   </div>
             </div>
         </section>
-        <section id="history-section"></section>
+        <section id="history-section" class="mt-[25rem] mx-auto max-w-[1140px] md:mt-[20rem]">
+        </section>
+        <section>
+            <!-- Modal Structure -->
+            <div id="successModal" class="modal hidden">
+                <div class="modal-content">
+                    <h2 class="text-xl font-bold mb-4">Congratulations!</h2>
+                    <p>Money successfully added.</p>
+                    <button id="closeModal" class="mt-4 bg-green-500 text-white px-4 py-2 rounded">OK</button>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/features.js"></script>
