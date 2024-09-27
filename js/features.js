@@ -11,3 +11,7 @@ document.getElementById('show-history-section')
         showSectionById('history-section');
     });
 
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href = 'blog.html';
+})
